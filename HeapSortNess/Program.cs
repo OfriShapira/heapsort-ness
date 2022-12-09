@@ -25,7 +25,7 @@ namespace HeapSortNess
 
             BuildMaxHeap(arr);
 
-            // One by one replace the largest element on the from heap with the last unsorted element
+            // One by one replace the largest element on the heap with the last element from the unsorted partition
             for (int i = heapSize - 1; i >= 1; i--)
             {
                 Swap(arr, i, 0);
@@ -69,7 +69,7 @@ namespace HeapSortNess
             }
         }
 
-        // Function to swap between 2 elements by their indexes
+        // Function to swap between 2 integers in a given integers array
         public static void Swap(int[] arr, int firstPosition, int secondPosition)
         {
             int temp = arr[firstPosition];
