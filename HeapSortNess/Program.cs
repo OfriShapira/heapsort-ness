@@ -6,16 +6,12 @@ namespace HeapSortNess
     {
         static void Main(string[] args)
         {
-
             int[] arr = { 6, 2, 5, 1, -2, 43, 22, 2 };
-
             HeapSort(arr);
-
             foreach (int item in arr)
             {
                 Console.WriteLine(item);
             }
-
         }
 
         // Function to recieve array of integeres and sort it according to the Heap Sort algorithm
@@ -64,7 +60,7 @@ namespace HeapSortNess
                 // Swap between the largest element in the array and the last element in the unsorted partition
                 Swap(arr, startIndex, largest);
 
-                // Recursively reorder the heap until its returns to max heap form
+                // Recursively reorder the heap until it becomes max heap again
                 Heapify(arr, heapSize, largest);
             }
         }
