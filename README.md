@@ -1,5 +1,6 @@
 # Heap Sort for Ness
 Course assignment - find and implement in C# a sorting algorithm with better time complexity than O(n^2)
+The implementation itself can be found [here](HeapSortNess/Program.cs).
 
 ## What is the Heap Sort algorithm?
 A heap is an ordered binary tree. <br /> 
