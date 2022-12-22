@@ -15,11 +15,11 @@ For this algorithm implementation, we will use 2 main functions: <br />
 3. Replace the extracted item with the last item in the unsorted partition of the array.
 4. Repeat the above process and gradually increase the sorted partition of the array, until we have a single item in the heap, which means that the array is fully sorted.
 
-## Why did i chose it?
+## Why did I choose it?
 I chose the Heap Sort algorithm over the other methods due to its **O(n log n)** time complexity (also in the worst case scenarios) and due to its efficient **O(1)** space complexity (which comes along with the in-place sorting techniques).
 
 ## Heap Sort time complexity explained
-In the Heapify() function, we traverse the heap from from top to bottom. Since the height of a full binary tree (the root is not included) in the size of n is log2(n), as the number of elements doubles, the tree becomes only one level deeper.
+In the Heapify() function, we traverse the heap from top to bottom. Since the height of a full binary tree (the root is not included) in the size of n is log2(n), as the number of elements doubles, the tree becomes only one level deeper.
 ![Heapify Function](https://www.happycoders.eu/wp-content/uploads/2020/08/heapsort_heapify_complexity_tree-v2-944x294.png)
 Accordingly, the time complexity for the Heapify() function is O(log n), when n represent the size of the tree. <br />
 In the BuildMaxHeap(), the time complexity is O(n). Further analysis can be found [here](https://www.happycoders.eu/algorithms/heapsort/#Heapsort_Time_Complexity). <br />
